@@ -1,70 +1,91 @@
-# Getting Started with Create React App
+# React Nutritions
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Este projeto é um exemplo de aprendizado em React.js que consome uma API de nutrição. Ele exibe uma lista de artigos sobre nutrição com informações como título, imagem, subtítulo e categoria.
 
-## Available Scripts
+## Funcionalidades
 
-In the project directory, you can run:
+- Consumo de dados de uma API externa.
+- Exibição de lista de artigos com detalhes como:
+  - Título
+  - Imagem
+  - Subtítulo
+  - Categoria
+- Estilização simples utilizando CSS.
 
-### `npm start`
+## Tecnologias Utilizadas
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- React.js
+- CSS
+- Fetch API
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Como Executar o Projeto
 
-### `npm test`
+1. Clone este repositório:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+   ```bash
+   git clone https://github.com/christian-2024/react-nutritions.git
+   ```
 
-### `npm run build`
+2. Navegue até o diretório do projeto:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+   ```bash
+   cd react-nutritions
+   ```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+3. Instale as dependências:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+   ```bash
+   npm install
+   ```
 
-### `npm run eject`
+4. Inicie o servidor de desenvolvimento:
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+   ```bash
+   npm start
+   ```
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+5. Abra o navegador e acesse `http://localhost:3000` para visualizar o projeto.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## Estrutura do Projeto
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+```
+react-nutritions/
+|-- public/
+|-- src/
+|   |-- App.js          # Componente principal
+|   |-- style.css       # Estilo do projeto
+|   |-- index.js        # Ponto de entrada da aplicação
+|-- package.json        # Dependências e scripts
+```
 
-## Learn More
+## API Utilizada
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Os dados dos artigos são consumidos da seguinte API:
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+**URL:** [https://sujeitoprogramador.com/rn-api/?api=posts](https://sujeitoprogramador.com/rn-api/?api=posts)
 
-### Code Splitting
+### Exemplo de Resposta da API
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+```json
+[
+  {
+    "id": 1,
+    "titulo": "Refeições proteicas para fazer antes de dormir",
+    "capa": "https://sujeitoprogramador.com/nutriapp/wp-content/uploads/2017/12/Screenshot_3-2.jpg",
+    "subtitulo": "O que acontece com nossos músculos quando estamos dormindo...",
+    "categoria": "Dieta"
+  }
+]
+```
 
-### Analyzing the Bundle Size
+## Estilização
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+Os estilos do projeto estão definidos no arquivo `style.css`. Certifique-se de ajustar conforme necessário para personalizar o visual.
 
-### Making a Progressive Web App
+## Autor
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+Este projeto foi desenvolvido como parte do meu aprendizado em React.js. Fique à vontade para contribuir ou deixar sugestões!
 
-### Advanced Configuration
+## Licença
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Este projeto é livre para uso e aprendizado.
